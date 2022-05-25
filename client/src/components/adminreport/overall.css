@@ -1,0 +1,192 @@
+.overcontainer {
+    border: 2px solid #ddd;
+    background-color: #e1e6e9;
+    box-shadow: 0 2px 14px 7px rgba(97, 97, 97, 0.65);
+    margin-top: 2rem;
+    background-color: white;
+    margin-left: 7rem;
+    margin-right: 2rem;
+}
+
+.loadingspinnerdiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 6rem;
+    flex-wrap: wrap;
+}
+
+.loadingtext {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.tablecont {
+    margin: auto;
+    /* margin-top: 2rem; */
+    margin-top: .9rem;
+    width: 80%;
+}
+
+.searchbox {
+    /* position: absolute; */
+    /* top: 8rem; */
+    /* right: 11%; */
+    /* margin-right: -39rem; */
+    border-radius: 5px;
+    z-index: 9;
+    /* box-shadow: 0 0 10px #000; */
+}
+
+.paybutton {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    margin: 5px 5px;
+    margin-right: 5px;
+    background-color: #84e19f;
+    border: none;
+    border-radius: 2px;
+    position: relative;
+    padding: 8px 30px;
+    /* margin: 10px 1px; */
+    font-size: 14px;
+    font-weight: 500;
+    /* text-transform: uppercase; */
+    letter-spacing: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition-duration: .4s;
+    will-change: box-shadow, transform;
+}
+
+.paybutton:hover {
+    background-color: #8fadec;
+}
+
+.filterbutton {
+    width: 10rem;
+    height: 4rem;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    margin: 10px 5px;
+    margin-right: 5px;
+    background-color: #c1a6e8;
+    border: none;
+    border-radius: 2px;
+    position: relative;
+    padding: 8px 30px;
+    margin: 10px 1px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition-duration: .4s;
+    will-change: box-shadow, transform;
+}
+
+.filterbutton:hover {
+    background-color: rgb(202, 197, 197);
+    margin: 15px 4px;
+    width: 11rem;
+    font-weight: bolder;
+    /* height: 5rem; */
+}
+
+.studreportfield {
+    font-weight: bold;
+    margin: auto 0;
+    margin-right: 10px;
+}
+
+.stureportcol {
+    margin: .2rem;
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-top: 0.1rem; */
+}
+
+.btnred {
+    background-color: rgb(238, 108, 108);
+}
+
+.overflowuser {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.user {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #b3e3ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    height: 300px;
+    margin: 20px;
+}
+
+.paginationBttns {
+    width: 80%;
+    height: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.paginationBttns a {
+    padding: 10px;
+    margin: 8px;
+    border-radius: 5px;
+    border: 1px solid #797ab8;
+    color: #000000;
+    cursor: pointer;
+}
+
+.paginationBttns a:hover {
+    color: black;
+    background-color: #c1a6e8;
+    text-decoration: none;
+}
+
+.paginationActive a {
+    color: white;
+    background-color: #c1a6e8;
+    ;
+}
+
+.paginationDisabled a {
+    color: rgb(255, 254, 254);
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+.textareacss {
+    margin-top: .5rem;
+    width: 44%;
+    font-family: 'Montserrat';
+    padding: .5rem;
+    height: 100%;
+}
+
+.deftextareacss {
+    /* margin-top: 1rem; */
+    font-family: 'Montserrat';
+    font-weight: 600;
+    width: 44%;
+    background-color: #b3e3ff;
+    width: 44%;
+    background-color: #b3e3ff;
+    border: 1px solid black;
+    padding: .5rem;
+    height: 100%;
+}
+
+.otpheading {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: .5rem;
+}

@@ -1,0 +1,29 @@
+#ResumeContainer {
+    margin:auto;
+    width: 10%;
+    margin-top: -30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.PDFDocument {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.PDFPage {
+    box-shadow: 0 0 8px rgba(0, 0, 0, .5);
+}
+
+.PDFPageOne {
+    margin-bottom: 0px;
+    margin-top:  0px;;
+    
+}
+
+.PDFPage > canvas {
+    max-width: 260px;
+    height: auto !important;
+}

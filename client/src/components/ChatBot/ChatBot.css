@@ -1,0 +1,26 @@
+
+  df-messenger {
+   --df-messenger-bot-message: #1587B6;
+   --df-messenger-button-titlebar-color: var(--df-messenger-user-message);
+   --df-messenger-chat-background-color: #fafafa;
+   --df-messenger-font-color: white;
+   --df-messenger-send-icon: #3385FF;
+   --df-messenger-user-message: #479b3d;
+    height: 200px;
+  }
+
+
+
+  /* #chat-div{
+      font-size: large;
+  } */
+ 
+.chat-wrapper[opened="true"] {
+    height: 400px;
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px) scale(1, 1);
+    transition: transform 0.2s ease, opacity 0.2s ease-in;
+}
+#chat-div{
+    height: 400px;
+}
