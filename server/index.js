@@ -1,18 +1,21 @@
-const cors=require('cors');
-const dotenv = require('dotenv');
-dotenv.config({ path: './config.env' });
-const express=require('express');
-const mongoose=require('mongoose');
-const app=express();
+const cors = require("cors");
+const dotenv = require("dotenv");
+dotenv.config({ path: "./config.env" });
+const express = require("express");
+const mongoose = require("mongoose");
+const app = express();
 
-app.use(express.json({ limit: '10kb' }));
-app.use(express.urlencoded({extended:false}));//urlencoded
-app.use(cors());//cors
-const collegeRoute = require('./Routes/CollegeRoute');
-const entryRoute=require('./Routes/EntryRoutes')
+app.use(express.json({ limit: "10kb" }));
+app.use(express.urlencoded({ extended: false })); //urlencoded
+app.use(cors()); //cors
+const collegeRoute = require("./Routes/CollegeRoute");
+const entryRoute = require("./Routes/EntryRoutes");
 console.log(process.env.DATABASE);
+app.get("/", (req, res) => {
+  res.send("Hello Movie Star API");
+});
 const DB = process.env.DATABASE.replace(
-  '<PASSWORD>',
+  "<PASSWORD>",
   process.env.DATABASE_PASSWORD
 );
 mongoose
@@ -20,11 +23,11 @@ mongoose
     useNewUrlParser: true,
     useCreateIndex: true,
     useFindAndModify: false,
-   useUnifiedTopology: true 
+    useUnifiedTopology: true,
   })
-  .then(() => console.log('DB connection successful!'));
-  app.use('/college', collegeRoute);
-  app.use('/entry',entryRoute);
+  .then(() => console.log("DB connection successful!"));
+app.use("/college", collegeRoute);
+app.use("/entry", entryRoute);
 const port = process.env.PORT || 4000;
 const server = app.listen(port, () => {
   console.log(`App running on port ${port}...`);
